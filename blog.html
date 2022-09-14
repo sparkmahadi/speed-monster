@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Questions & Answers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <style>
+    .bg-desired{
+        background-color: #d0d7e2;
+    }
+  </style>
+  <body class="bg-desired">
+    <header class="container text-center pt-3">
+        <h1 class="bg-white py-3 rounded-3">Some Questions related to JavaScript</h1>
+    </header>
+    <main class="container">
+        <div class="my-auto">
+            <ul class="listgroup p-0">
+                <li class="list-group-item bg-white my-4 p-3 p-lg-4 rounded-3"><h3 class="text-center text-md-start">What is the difference between Local Storage and Session Storage?</h3>
+                    <p><span class="fw-bold">Local Storage:</span>
+                        Local Storage is a web storage method that helps us store data on the client’s computer in the form of key/value pairs in a web browser. The data is stored in local storage for a lifetime unless the user manually deletes it from the browser. It does not expire even when the user closes the window or tab. Instead, the data remains in the browser until and unless the browser's memory is cleared.
+                    <br>
+                    <span class="fw-bold">Session Storage:</span>
+                        The Session Storage is very similar to the Local Storage. Still, the main difference lies in the lifespan as it persists in the browser until its current tab or session is on. Once you close the tab or terminate the session, the data on session storage also gets lost. </p>
+                </li>
+                <li class="list-group-item bg-white my-4 p-3 p-lg-4 rounded-3">
+                    <h3 class="text-center text-md-start">What is the difference between Global Scope and Block Scope?</h3>
+                    <p><span class="fw-bold">Global Scope:</span>
+                        If a variable is declared outside all functions or curly braces ({}), it exists in the global scope. That means, It can be accessed by any line of code in the program, including inside blocks. So, the global scope means the scope or area which is existed all over the code.
+                    <br>
+                    <span class="fw-bold">Block Scope:</span>
+                        Block Scope means the scope or area inside a block of codes like inside a function or conditionals or other curly braces ({}). In this case, the variable can be accessed only inside the scope. That means, the variable only exists inside the block and cannot be accessed from outside of the block. </p>
+                </li>
+                <li class="list-group-item bg-white my-4 p-3 p-lg-4 rounded-3">
+                    <h3 class="text-center text-md-start">How the JS Event Loop works?</h3>
+                    <p><span class="fw-bold">Event Loop in JS:</span>
+                        The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process. Basically, it is a component of js which is one of the helper for JS to complete asynchronous tasks.
+                    </p>
+                </li>
+                <li class="list-group-item bg-white my-4 p-3 p-lg-4 rounded-3">
+                    <h3 class="text-center text-md-start">In how many ways, can we get 'undefined'?</h3>
+                    <p><span class="fw-bold">Ways of getting 'undefined':</span>
+                        <ul>
+                            <li>A variable which is not initialized yet will give the value 'undefined'.</li>
+                            <li>A function with no return.</li>
+                            <li>A parameter that is not passed.</li>
+                            <li>A return in a function which doesn't have any value beside it.</li>
+                            <li>A property of an object which doesn't exist.</li>
+                            <li>Trying to access an element of an array out of it's index range.</li>
+                            <li>An element of array which is deleted.</li>
+                            <li>Assigning a value as 'undefined'.</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
