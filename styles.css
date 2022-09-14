@@ -181,6 +181,19 @@ button {
   top: 0;
 }
 
+#wpm{
+  padding-left: 7px;
+}
+#wpm-div{
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;

@@ -136,11 +136,8 @@ setInterval(() => {
   const timeSpent = parseInt((currentTime - startTime) / 1000);
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
-  // const first = userText.length - errorCount;
-  // console.log(first)
-  // console.log(errorCount)
   let wpm = Math.round(((userText.length - errorCount)  / 5) / timeSpent * 60);
-        wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
+  wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
   document.getElementById('wpm').innerText = wpm;
 
 
