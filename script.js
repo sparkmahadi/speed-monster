@@ -25,8 +25,10 @@ const typeController = (e) => {
 
   // Handle backspace press
   if (newLetter == "Backspace") {
+    if(userText.length >0){
     userText = userText.slice(0, userText.length - 1);
     return display.removeChild(display.lastChild);
+    }
   }
 
   // these are the valid character we are allowing to type
