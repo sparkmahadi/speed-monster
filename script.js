@@ -121,6 +121,7 @@ const start = () => {
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
+      countdownOverlay.innerHTML = '';
     }
       count--;
   }, 1000);
@@ -144,3 +145,10 @@ setInterval(() => {
 
 
 }, 1000);
+
+// for stopping scroll with spacebar press
+window.addEventListener('keydown', (e) => {  
+  if (e.keyCode === 32 && e.target === document.body) {  
+    e.preventDefault();  
+  }  
+});
